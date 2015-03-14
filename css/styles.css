@@ -1,9 +1,17 @@
 /* Utility Classes */
+body {
+    background: #FFD4AA;
+}
+
 .container {
     max-width: 980px;
     margin: 0 auto;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 300;
+}
+
+h1 {
+    font-family: 'Schoolbell', cursive;
 }
 
 p {
@@ -28,24 +36,23 @@ input:focus {
     border-bottom: 1px solid black;
     width: 150px;
     text-align: center;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Schoolbell', cursive;
     font-size: 1.25em;
 }
 
 .madlib-title::after {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,0);
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     white-space: pre;
     font-style: italic;
     font-size: .75em;
 }
 
-.noun::after {
-    content: "(noun)";
+.animal::after {
+    content: "(animal)";
 }
 
 .adjective::after {
@@ -54,6 +61,18 @@ input:focus {
 
 .proper-noun::after {
     content: "(proper noun)";
+}
+
+.part-of-body::after {
+    content: "(part of body)";
+}
+
+.verb::after {
+    content: "(verb)";
+}
+
+.location::after {
+    content: "(location)";
 }
 
 /* Paper Sheets */
