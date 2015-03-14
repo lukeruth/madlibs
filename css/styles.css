@@ -1,0 +1,98 @@
+/* Utility Classes */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Mad Libs Styling */
+.madlib-content {
+    line-height: 3.5;
+}
+
+.madlib-container {
+    position: relative;
+}
+
+.madlib-input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.25em;
+}
+
+.madlib-title::after {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    white-space: pre;
+    font-style: italic;
+    font-size: .75em;
+}
+
+.noun::after {
+    content: "(noun)";
+}
+
+.adjective::after {
+    content: "(adjective)";
+}
+
+.proper-noun::after {
+    content: "(proper noun)";
+}
+
+/* Paper Sheets */
+.paper {
+    position: relative;
+    margin: 100px auto;
+    padding: 40px;
+    width: 75%;
+}
+
+.paper::before,
+.paper::after {
+    content: "";
+    width: 99%;
+    height: 250px;
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    z-index: -1;
+}
+
+.paper::before {
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+.paper::after {
+    left: -5px;
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.paper,
+.paper::before,
+.paper::after {
+    background: #fff;
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
